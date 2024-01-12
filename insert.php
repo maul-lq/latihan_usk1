@@ -14,7 +14,7 @@ $namaortu = $_POST['namaortu'];
 $noortu = $_POST['noortu'];
 $pekerjaanortu = $_POST['pekerjaanortu'];
 
-$sql = "INSERT INTO `tabel` (`NISN`, `Nama Siswa`, `Tingkatan`, `Konsentrasi Keahlian`, `Wali Kelas`, `Alamat Siswa`, `No. Telp Siswa`, `Email`, `Nama Orangtua`, `No. Telp Orangtua`, `Pekerjaan Orangtua`)
+$sql = "INSERT INTO `tabel_siswa` (`NISN`, `Nama Siswa`, `Tingkatan`, `Konsentrasi Keahlian`, `Wali Kelas`, `Alamat Siswa`, `No. Telp Siswa`, `Email`, `Nama Orangtua`, `No. Telp Orangtua`, `Pekerjaan Orangtua`)
 VALUES ('$nisn', '$nama',  '$tingkat', '$jurusan', '$wali', '$alamat', '$nosiswa', '$email', '$namaortu', '$noortu', '$pekerjaanortu')";
 echo $sql;
 $conn->query($sql);

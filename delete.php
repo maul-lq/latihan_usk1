@@ -3,7 +3,7 @@
 require_once 'connecction.php';
 
 $id = $_GET['id'];
-$sql = "DELETE FROM `tabel` WHERE `Nomor`='$id';";
+$sql = "DELETE FROM `tabel_siswa` WHERE `Nomor`='$id';";
 $conn->query($sql);
 
 if ($conn->affected_rows > 0) {

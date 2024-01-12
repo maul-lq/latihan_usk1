@@ -1,6 +1,6 @@
 <?php
 include('connecction.php');
-$query = mysqli_query($conn, "SELECT * FROM tabel");
+$query = mysqli_query($conn, "SELECT * FROM `tabel_siswa`");
 $results = mysqli_fetch_all($query, MYSQLI_ASSOC);
 
 ?>
